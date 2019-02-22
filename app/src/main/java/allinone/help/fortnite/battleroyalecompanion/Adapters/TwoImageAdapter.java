@@ -1,4 +1,4 @@
-package allinone.help.fortnite.battleroyalecompanion;
+package allinone.help.fortnite.battleroyalecompanion.Adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +14,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
+import allinone.help.fortnite.battleroyalecompanion.Item;
+import allinone.help.fortnite.battleroyalecompanion.R;
 
 
 public class TwoImageAdapter extends RecyclerView.Adapter<TwoImageAdapter.ViewHolder>  {

@@ -12,8 +12,9 @@ import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
+import allinone.help.fortnite.battleroyalecompanion.Adapters.TwoImageAdapter;
+import allinone.help.fortnite.battleroyalecompanion.InfoContent.ContentInfoFragment;
 
 
 /**
@@ -62,15 +63,15 @@ public class MainMenuFragment extends Fragment implements TwoImageAdapter.OnImag
 
     @Override
     public void onImageClick(int position) {
-//        Fragment fr = new Content();
-//        Bundle args = new Bundle();
-//        args.putInt("bundle_int", position);
-//        fr.setArguments(args);
-//
-//        getActivity().getSupportFragmentManager().beginTransaction()
-//                .replace(R.id.fragment_container, fr)
-//                .addToBackStack(null)
-//                .commit();
+        ContentInfoFragment fr = new ContentInfoFragment();
+        Bundle args = new Bundle();
+        args.putInt("bundle_int", position);
+        fr.setArguments(args);
+
+        getActivity().getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_container, fr)
+                .addToBackStack(null)
+                .commit();
     }
 
     @Override
